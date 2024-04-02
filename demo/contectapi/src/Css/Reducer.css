@@ -1,0 +1,51 @@
+#btn{
+    background-color: chartreuse;
+    color: black;
+    box-shadow: 0 0 50px;
+    border-radius: 0 10px;
+    font-size: 20px;    
+}
+#btn:hover{
+    background-color: black;
+    color: chartreuse;
+    box-shadow: 0 0 10px chartreuse;
+    border-radius: 0 10px;
+
+}
+#count{
+    font-size: 50px;
+    text-align: center;
+}
+h1{
+    align-items: center;
+    display: flex;
+}
+#btn1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#btn2{
+    background-color: chartreuse;
+    color: black;
+    box-shadow: 0 0 50px;
+    border-radius: 0 10px;
+    font-size: 20px;
+    width: 40px;
+    
+}
+#btn2:hover{
+    background-color: black;
+    color: chartreuse;
+    box-shadow: 0 0 10px chartreuse;
+    border-radius: 0 10px;
+}
+
+
+/* ----------------useeffects2---------------------- */
+
+#count{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

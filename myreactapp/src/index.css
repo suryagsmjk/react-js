@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    padding: 0 30px;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar>img {
+    height: 40px;
+    width: 80px;
+    margin: 10px 0 10px 0;
+    border-radius: 0 10px 0;
+    box-shadow: 0 0 20px rgb(0, 255, 38);
+
+}
+
+.navbar>div {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.input {
+    background-color: rgb(250, 0, 0);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 100px;
+    padding: 10px;
+}
+
+.input>input {
+    height: 50px;
+    flex-grow: 1;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.input>input:hover {
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    background-color: black;
+    color: white;
+}
+
+.input>input::placeholder {
+    color: red;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.input>input:focus {
+    outline: none;
+    border: none;
+    box-shadow: 0 0 10px rgb(4, 181, 4);
+}
+
+.input>button {
+    height: 50px;
+    padding: 0 40px 0;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgb(4, 181, 4);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(0, 255, 38);
+}
+
+.input>button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+    transition: all 0.5s ease 0s;
+    transform: scale(0.9, 0.9);
+}
+
+.container {
+    display: grid;
+    min-height: calc(100vh - 160px);
+    padding: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    align-content: start;
+}
+
+.card {
+    background-color: rgb(62, 56, 146);
+    height: 100px;
+    max-width: 400px;
+    display: flex;
+    
+    justify-content: space-between;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+h3 {
+    overflow-y: scroll;
+    flex-grow: 1;
+}
+
+.buttons {
+    padding: 5px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.buttons>button {
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px;
+    margin: 0 0 0 8px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 10px black;
+    border-radius: 4px;
+    background-color: rgb(17, 255, 0);
+}
+
+.buttons>button:first-child {
+    background-color: red;
+}
+
+.buttons>button:hover {
+    transition: all 0.5s ease 0s;
+    transform: scale(0.8, 0.8);
+    opacity: 0.7;
+}
+
+.modal-container {
+    display: inline-block;
+    height: 98vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(47, 73, 114, 0.6);
+}
+
+.modal {
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    display: flex;
+    height: 300px;
+    width: 400px;
+    background-color: rgb(0, 228, 244);
+    color: rgb(0, 0, 0);
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.modal textarea {
+    outline: 10px rgb(0, 0, 0);
+    border: none;
+    border-radius: 2px;
+    font-size: 18px;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.modal-buttons>button {
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 19px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 247, 90);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.modal-buttons>button {
+    transition: all 0.5s ease 0s;
+    transform: scale(0.8, 0.8);
+}
+
+.modal-buttons>button:nth-child(2) {
+    background-color: rgb(255, 0, 0);
+    color: black;
+}
+
+.cross {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: black;
+    cursor: pointer;
+
+}
+
+.cross:hover,
+.modal-buttons>button:hover {
+    transform: perspective(200px) translateZ(30px);
+
+}
+
+@media (max-width:1200px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width:900px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:500px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .input>button {
+        padding: 0;
+    }
+
+    .input>input {
+        height: 50px;
+        flex-grow: 1;
+        font-size: 16px;
+    }
+}

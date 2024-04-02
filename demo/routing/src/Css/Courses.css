@@ -1,0 +1,33 @@
+.main{
+    background-color: rgb(192, 122, 122);
+    display: flex;
+    width: 100%;    
+}
+
+.courses-link{
+    background-color: rgb(39, 50, 40);
+    width: 10vw;
+    height: 80vh;
+    color: rgb(0, 0, 0);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    row-gap: 30px;
+    font-size: 22px;
+}
+
+.courses-link li:hover{
+    cursor:pointer;
+    color:chartreuse;
+    font-weight: bold;
+}
+.links{
+    color: white;
+    text-decoration: none;
+}
+.child{
+    padding-left: 20px;
+    
+}
