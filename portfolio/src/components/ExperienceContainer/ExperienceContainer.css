@@ -1,0 +1,39 @@
+.experienceContainer {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+    padding-top: 200px;
+    background-image: url(../../assets/SpiderMan/626453.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0);
+
+}
+
+.experienceContainer>h1 {
+    padding-bottom: 20px;
+}
+
+.box {
+    background: url(../../assets/SpiderMan/2084621.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    z-index: 100px;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: inset 0 0 0 2000px rgb(0, 0, 0, 0.9);
+    transition: all 1s ease-in 0s; 
+}
+
+.box>.experience:hover {
+
+    background-color: #f46c08;
+
+}

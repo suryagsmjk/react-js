@@ -1,0 +1,48 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0 100px;
+    background-image: url(../../assets/SpiderMan/1122387.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0);
+}
+
+.info {
+    border: 1px solid white;
+    width: 600px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.info>p {
+    text-align: left;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+.info>p>span {
+    color: #18f608;
+}
+
+.icon>a>button>.MuiSvgIcon-root {
+    color: white;
+    font-size: 30px;
+}
+
+.icon>a .MuiIconButton-root {
+    color: rgb(176, 167, 167) !important;
+}
+
+.icon>a .MuiIconButton-root :hover {
+    color: rgb(212, 155, 20) !important;
+}
