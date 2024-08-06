@@ -17,6 +17,8 @@ connectDB();
 
 //api endpoints
 app.use("/api/food",foodRouter)
+app.use("/images",express.static('uploads'))
+
 
 app.get("/",(req,res)=>{
         res.send("API Working")
@@ -26,3 +28,4 @@ app.listen(port,()=>{
     console.log(`Server Started on http://localhost:${port}`);
 })
 
+//mongodb+srv://suryagsmjk:Moonstar9790@cluster0.86df8ws.mongodb.net/?

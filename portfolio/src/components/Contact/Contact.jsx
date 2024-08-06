@@ -36,7 +36,7 @@ const Contact = () => {
                             <Twitter />
                         </IconButton>
                     </a>
-                    <a href='https://github.com/dashboard' target='_blank'>
+                    <a href='https://github.com/suryagsmjk' target='_blank'>
                         <IconButton>
                             <GitHub />
                         </IconButton>
